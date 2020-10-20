@@ -10,6 +10,12 @@ private:
  Student student;
  Node* next;
 public:
-    Node(Student);
+    Node(Student student);
     friend class Simple_List;
 };
+
+Node::Node(Student student)
+{
+    this->student = student;
+    next = nullptr;
+}
